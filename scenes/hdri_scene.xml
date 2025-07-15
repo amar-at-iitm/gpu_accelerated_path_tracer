@@ -1,0 +1,15 @@
+<!-- A scene lit by an HDRI environment map -->
+<scene>
+    <camera lookfrom="0 2 5" lookat="0 1 0" vup="0 1 0" vfov="50" aspect="1.5" />
+
+    <!-- Environment Light -->
+    <light type="hdri" file="environments/studio.hdr" />
+
+    <!-- Materials -->
+    <material id="0" type="dielectric" ref_idx="1.5" /> <!-- Glass -->
+    <material id="1" type="diffuse" albedo="0.1 0.8 0.2" /> <!-- Green -->
+
+    <!-- Objects -->
+    <mesh file="dragon.obj" material_id="0" />
+    <mesh file="plane.obj" material_id="1" />
+</scene>
