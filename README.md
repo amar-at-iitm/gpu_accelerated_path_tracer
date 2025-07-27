@@ -120,7 +120,7 @@ To avoid testing every single triangle in the scene for a ray intersection (an $
 ## Project Structure
 
 ```
-/path-tracer/
+/gpu_accelerated_path_tracer/
 ├── README.md
 ├── build/
 ├── scenes/
